@@ -230,7 +230,7 @@ function getTimeMachine($projKey){
 [System.Collections.ArrayList] $projList = getProjects
 [System.Collections.ArrayList] $projListFiltered = FilterProjectsAnalysisDate $refDateScopeStart $refDateScopeEnd $projList
 
-$locProject = GetLOCInList $projList
+$locTotal = GetLOCInList $projList
 $locActive = GetLOCInList $projListFiltered  
 
 $scansTotal = 0
